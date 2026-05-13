@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="YOUR_PROJECT_DESCRIPTION" />
+    <meta name="keywords" content="YOUR_PROJECT_NAME, training, courses, contact" />
+    <link rel="canonical" href="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:title" content="YOUR_PROJECT_NAME" />
+    <meta property="og:description" content="YOUR_PROJECT_DESCRIPTION" />
+    <meta property="og:image" content="https://yourdomain.com/public/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://yourdomain.com/" />
+    <meta name="twitter:title" content="YOUR_PROJECT_NAME" />
+    <meta name="twitter:description" content="YOUR_PROJECT_DESCRIPTION" />
+    <meta name="twitter:image" content="https://yourdomain.com/public/og-image.png" />
+    <title>YOUR_PROJECT_NAME</title>
+    <link rel="icon" type="image/png" href="public/favicon.png" />
+    <link rel="manifest" href="public/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "YOUR_BRAND_NAME",
+        "url": "https://yourdomain.com",
+        "description": "YOUR_PROJECT_DESCRIPTION",
+        "email": "your@email.com",
+        "telephone": "+15550100199"
+      }
+    </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              primary: "var(--primary-color)",
+              accent: "var(--secondary-color)",
+            },
+            boxShadow: {
+              glow: "0 0 20px rgba(15, 23, 42, 0.12)",
+              soft: "0 10px 30px rgba(15, 23, 42, 0.08)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --primary-color: #2563eb;
+        --secondary-color: #eab308;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @keyframes heroZoom {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.08);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur transition-all">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+        <a href="#home" class="inline-flex items-center" aria-label="YOUR_BRAND_NAME home">
+          <img
+            src="public/logo.svg"
+            alt="YOUR_BRAND_NAME logo"
+            class="h-14 w-auto transition-transform duration-300 hover:scale-105 sm:h-16"
+            loading="eager"
+          />
+        </a>
+        <nav class="hidden items-center gap-6 md:flex">
+          <a href="#home" class="text-sm font-semibold text-slate-700 transition hover:text-primary">Home</a>
+          <a href="#courses" class="text-sm font-semibold text-slate-700 transition hover:text-primary">Courses</a>
+          <a href="#about" class="text-sm font-semibold text-slate-700 transition hover:text-primary">About</a>
+          <a href="#contact" class="text-sm font-semibold text-slate-700 transition hover:text-primary">Contact</a>
+        </nav>
+        <a
+          href="tel:+15550100199"
+          class="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:scale-[1.02] hover:bg-blue-900"
+          >Call Now</a
+        >
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="relative flex min-h-[85vh] items-center overflow-hidden pb-20 pt-16 sm:pb-24 sm:pt-20">
+        <div
+          class="absolute inset-0 z-0 bg-cover bg-center"
+          style="background-image: url('public/hero.jpg'); animation: heroZoom 20s infinite alternate ease-in-out;"
+        ></div>
+        <div class="absolute inset-0 z-10 bg-gradient-to-r from-slate-900/95 via-primary/80 to-primary/40"></div>
+
+        <div class="relative z-20 mx-auto w-full max-w-6xl px-4 sm:px-6">
+          <div class="max-w-2xl fade-in">
+            <p class="mb-3 inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-slate-900">
+              Admissions Now Open
+            </p>
+            <h1 class="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Master a Trade. Build Your Future.
+            </h1>
+            <p class="mt-4 text-base text-slate-100 sm:text-lg">
+              Equip yourself with high-demand technical skills. Our hands-on training programs are designed to make you job-ready and financially independent.
+            </p>
+            <p class="mt-3 text-sm font-semibold text-accent sm:text-base">
+              Call now: <a href="tel:+15550100199" class="underline decoration-accent underline-offset-2">+1 (555) 010-0199</a>
+            </p>
+            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="tel:+15550100199"
+                class="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-extrabold text-slate-900 shadow-glow transition-all hover:scale-105 hover:bg-yellow-300"
+                >Call Now</a
+              >
+              <a
+                href="https://wa.me/15550100199"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/20"
+                >Chat on WhatsApp</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 z-20 w-full overflow-hidden leading-none text-slate-50">
+          <svg class="block h-[40px] w-full sm:h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.83,119.62,199.53,108.62Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="relative z-30 bg-slate-50 px-4 sm:px-6">
+        <div class="mx-auto -mt-10 grid max-w-6xl grid-cols-2 gap-4 rounded-2xl bg-white p-6 shadow-xl sm:-mt-16 sm:grid-cols-4 lg:p-8">
+          <div class="fade-in flex flex-col items-center text-center">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <p class="text-xs font-bold text-slate-800 sm:text-sm">Industry Standard</p>
+          </div>
+          <div class="fade-in flex flex-col items-center text-center">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <p class="text-xs font-bold text-slate-800 sm:text-sm">YOUR_STAT_HIGHLIGHT</p>
+          </div>
+          <div class="fade-in flex flex-col items-center text-center">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <p class="text-xs font-bold text-slate-800 sm:text-sm">Hands-On Focused</p>
+          </div>
+          <div class="fade-in flex flex-col items-center text-center">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <p class="text-xs font-bold text-slate-800 sm:text-sm">YOUR_REGION_ONE &amp; YOUR_REGION_TWO</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="bg-slate-50 px-4 py-16 sm:px-6 lg:py-24">
+        <div class="mx-auto max-w-6xl">
+        <div class="mb-8 text-center fade-in">
+          <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Our Training Programs</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-base text-slate-600 sm:text-lg">Intensive, practical-first courses tailored for your local job market.</p>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-01.jpg" alt="CCTV Installation training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">CCTV Installation</h3>
+              <p class="mt-2 text-sm text-slate-600">Learn to design, install, and troubleshoot modern security camera networks.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-02.jpg" alt="Solar Energy training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Solar Energy</h3>
+              <p class="mt-2 text-sm text-slate-600">Master solar panel installation, battery sizing, and inverter setup.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-03.jpg" alt="Plumbing training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Plumbing</h3>
+              <p class="mt-2 text-sm text-slate-600">Get trained in professional pipe fitting, water heater installation, and repairs.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-04.jpg" alt="Electricals training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Electricals</h3>
+              <p class="mt-2 text-sm text-slate-600">Comprehensive training in domestic and industrial wiring and maintenance.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-05.jpg" alt="Electric Fence training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Electric Fence</h3>
+              <p class="mt-2 text-sm text-slate-600">Specialized training in designing and installing high-voltage perimeter security systems.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-06.jpg" alt="Car Tracking training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Car Tracking</h3>
+              <p class="mt-2 text-sm text-slate-600">Learn GPS tracker installation and fleet management configuration.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-07.jpg" alt="Air Conditioning training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Air Conditioning</h3>
+              <p class="mt-2 text-sm text-slate-600">Hands-on skills in AC installation, gas refilling, and general servicing.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+
+          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="overflow-hidden">
+              <img src="public/media-08.jpg" alt="Forklift Training class" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-primary">Forklift Training</h3>
+              <p class="mt-2 text-sm text-slate-600">Professional forklift operation, maintenance, and warehouse safety.</p>
+              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
+            </div>
+          </article>
+        </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="fade-in mb-8 text-center">
+            <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Your Path to Certification</h2>
+          </div>
+          <div class="grid gap-8 sm:grid-cols-3">
+            <article class="fade-in group relative rounded-3xl border border-slate-100 bg-slate-50 p-8 text-center transition-all hover:shadow-lg">
+              <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-black text-slate-900 shadow-glow transition-transform group-hover:scale-110">1</div>
+              <h3 class="text-xl font-bold text-primary">Get in Touch</h3>
+              <p class="mt-3 text-slate-600">Call or WhatsApp our admissions team to discuss the best course for you.</p>
+            </article>
+            <article class="fade-in group relative rounded-3xl border border-slate-100 bg-slate-50 p-8 text-center transition-all hover:shadow-lg">
+              <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-black text-slate-900 shadow-glow transition-transform group-hover:scale-110">2</div>
+              <h3 class="text-xl font-bold text-primary">Practical Training</h3>
+              <p class="mt-3 text-slate-600">Spend time in our fully equipped workshops learning directly from industry veterans.</p>
+            </article>
+            <article class="fade-in group relative rounded-3xl border border-slate-100 bg-slate-50 p-8 text-center transition-all hover:shadow-lg">
+              <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-black text-slate-900 shadow-glow transition-transform group-hover:scale-110">3</div>
+              <h3 class="text-xl font-bold text-primary">Graduate &amp; Work</h3>
+              <p class="mt-3 text-slate-600">Step into the job market with a recognized certificate and the confidence to deliver.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="fade-in mb-8 text-center">
+          <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Why Choose Us</h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+            <p class="font-bold text-slate-800">80% Practical, 20% Theory</p>
+          </div>
+          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+            <p class="font-bold text-slate-800">Taught by Industry Veterans</p>
+          </div>
+          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+            <p class="font-bold text-slate-800">Flexible Payment Plans</p>
+          </div>
+          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+            <p class="font-bold text-slate-800">Intensive Short Courses</p>
+          </div>
+          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+            <p class="font-bold text-slate-800">Post-Training Mentorship</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <div class="fade-in mb-8 text-center">
+            <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Inside Our Workshops</h2>
+            <p class="mt-2 text-sm text-slate-600">Take a look at our students getting hands-on experience across our campuses.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-01.jpg" alt="CCTV installation practical session" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-02.jpg" alt="Solar panel installation training" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-03.jpg" alt="Plumbing training practical" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-04.jpg" alt="Electrical wiring practical" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-08.jpg" alt="Forklift operation training" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-07.jpg" alt="Air conditioning maintenance training" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-05.jpg" alt="Electric fence installation training" loading="lazy" /></div>
+            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-06.jpg" alt="Car tracking installation training" loading="lazy" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="fade-in mb-8 text-center">
+          <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Our Locations</h2>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2">
+          <article class="fade-in rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 class="text-lg font-bold text-primary">YOUR_CITY_ONE</h3>
+            <p class="mt-2 text-sm text-slate-600">YOUR_ADDRESS_LINE_ONE</p>
+          </article>
+          <article class="fade-in rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 class="text-lg font-bold text-primary">YOUR_CITY_TWO</h3>
+            <p class="mt-2 text-sm text-slate-600">YOUR_ADDRESS_LINE_TWO</p>
+          </article>
+        </div>
+        <div class="fade-in mt-6 flex flex-col items-center justify-between rounded-2xl bg-blue-50 p-8 text-center sm:flex-row sm:text-left">
+          <div>
+            <h4 class="text-lg font-bold text-primary">Visit Our Campuses</h4>
+            <p class="mt-1 text-sm text-slate-600">Our workshops are open from Monday to Saturday, 8:00 AM - 5:00 PM. Walk in for a free campus tour.</p>
+          </div>
+          <a href="tel:+15550100199" class="mt-5 inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-blue-900 sm:mt-0">Get Directions</a>
+        </div>
+      </section>
+
+      <section class="bg-primary">
+        <div class="mx-auto max-w-6xl px-4 py-14 text-center text-white sm:px-6">
+          <h2 class="fade-in text-3xl font-extrabold tracking-tight sm:text-4xl">Take the First Step Towards Your New Career</h2>
+          <p class="fade-in mt-3 text-sm text-blue-100 sm:text-base">Contact our admissions office today to find out about upcoming intake dates.</p>
+          <div class="fade-in mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href="tel:+15550100199" class="rounded-full bg-accent px-8 py-4 text-sm font-extrabold text-slate-900 shadow-glow transition-all hover:scale-105 hover:bg-yellow-300">
+              Call Now
+            </a>
+            <a
+              href="https://wa.me/15550100199"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/20"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white pb-24 pt-10 md:pb-10">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Phone</h3>
+          <a href="tel:+15550100199" class="mt-3 block text-sm text-slate-700 hover:text-primary">+1 (555) 010-0199</a>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Email</h3>
+          <a href="mailto:your@email.com" class="mt-3 block text-sm text-slate-700 hover:text-primary">your@email.com</a>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Locations</h3>
+          <p class="mt-3 text-sm text-slate-700">YOUR_CITY_ONE: YOUR_ADDRESS_LINE_ONE</p>
+          <p class="mt-1 text-sm text-slate-700">YOUR_CITY_TWO: YOUR_ADDRESS_LINE_TWO</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Quick Links</h3>
+          <a href="#home" class="mt-3 block text-sm text-slate-700 hover:text-primary">Home</a>
+          <a href="#courses" class="mt-1 block text-sm text-slate-700 hover:text-primary">Courses</a>
+          <a href="#about" class="mt-1 block text-sm text-slate-700 hover:text-primary">About</a>
+          <a href="#contact" class="mt-1 block text-sm text-slate-700 hover:text-primary">Contact</a>
+        </div>
+      </div>
+      <p class="mt-8 text-center text-xs text-slate-500">© <span id="year"></span> YOUR_BRAND_NAME. All rights reserved.</p>
+    </footer>
+
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-300 bg-white p-3 shadow-[0_-8px_24px_rgba(15,23,42,0.1)] md:hidden">
+      <div class="mx-auto flex max-w-md gap-3">
+        <a href="tel:+15550100199" class="flex-1 rounded-full bg-primary px-4 py-3 text-center text-sm font-bold text-white">Call Now</a>
+        <a
+          href="https://wa.me/15550100199"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex-1 rounded-full bg-accent px-4 py-3 text-center text-sm font-bold text-slate-900"
+          >WhatsApp</a
+        >
+      </div>
+    </div>
+
+    <!-- ANALYTICS PLACEHOLDER -->
+    <!-- Add your analytics provider here -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "YOUR_PROJECT_NAME",
+  "short_name": "YOUR_BRAND_NAME",
+  "description": "YOUR_PROJECT_DESCRIPTION",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
