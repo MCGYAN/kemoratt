@@ -1,11 +1,11 @@
 {
-  "name": "YOUR_PROJECT_NAME",
-  "short_name": "YOUR_BRAND_NAME",
-  "description": "YOUR_PROJECT_DESCRIPTION",
+  "name": "Kemoratt | Supply & Procurement",
+  "short_name": "Kemoratt",
+  "description": "Professional procurement, supply chain, and operational support for businesses in Ghana.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "background_color": "#F4F7F9",
+  "theme_color": "#12395B",
   "icons": [
     {
       "src": "icon-192.png",

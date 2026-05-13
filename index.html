@@ -3,437 +3,653 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="YOUR_PROJECT_DESCRIPTION" />
-    <meta name="keywords" content="YOUR_PROJECT_NAME, training, courses, contact" />
-    <link rel="canonical" href="https://yourdomain.com/" />
+    <meta
+      name="description"
+      content="Professional procurement, supply chain, logistics support, office supplies, and operational solutions for businesses in Ghana. Reliable enterprise supply services tailored for modern organizations."
+    />
+    <meta
+      name="keywords"
+      content="Kemoratt, procurement Ghana, supply chain Accra, office supplies Ghana, operational support, B2B supply, commercial furniture, safety equipment, construction supplies"
+    />
+    <link rel="canonical" href="https://kemorattgh.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourdomain.com/" />
-    <meta property="og:title" content="YOUR_PROJECT_NAME" />
-    <meta property="og:description" content="YOUR_PROJECT_DESCRIPTION" />
-    <meta property="og:image" content="https://yourdomain.com/public/og-image.png" />
+    <meta property="og:url" content="https://kemorattgh.com/" />
+    <meta property="og:title" content="Kemoratt | Supply Chain &amp; Procurement Solutions in Ghana" />
+    <meta
+      property="og:description"
+      content="Professional procurement, supply chain, logistics support, office supplies, and operational solutions for businesses in Ghana. Reliable enterprise supply services tailored for modern organizations."
+    />
+    <meta property="og:image" content="https://kemorattgh.com/public/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://yourdomain.com/" />
-    <meta name="twitter:title" content="YOUR_PROJECT_NAME" />
-    <meta name="twitter:description" content="YOUR_PROJECT_DESCRIPTION" />
-    <meta name="twitter:image" content="https://yourdomain.com/public/og-image.png" />
-    <title>YOUR_PROJECT_NAME</title>
+    <meta name="twitter:url" content="https://kemorattgh.com/" />
+    <meta name="twitter:title" content="Kemoratt | Supply Chain &amp; Procurement Solutions in Ghana" />
+    <meta
+      name="twitter:description"
+      content="Professional procurement, supply chain, logistics support, office supplies, and operational solutions for businesses in Ghana."
+    />
+    <meta name="twitter:image" content="https://kemorattgh.com/public/og-image.png" />
+    <title>Kemoratt | Supply Chain &amp; Procurement Solutions in Ghana</title>
     <link rel="icon" type="image/png" href="public/favicon.png" />
     <link rel="manifest" href="public/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "YOUR_BRAND_NAME",
-        "url": "https://yourdomain.com",
-        "description": "YOUR_PROJECT_DESCRIPTION",
-        "email": "your@email.com",
-        "telephone": "+15550100199"
+        "name": "Kemoratt",
+        "url": "https://kemorattgh.com",
+        "description": "Business supply, procurement, and operational support company serving organizations across Ghana.",
+        "email": "info@kemorattgh.com",
+        "telephone": ["+233249190789", "+233244786806"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Accra North",
+          "addressRegion": "Greater Accra",
+          "addressCountry": "GH"
+        },
+        "areaServed": { "@type": "Country", "name": "Ghana" }
       }
     </script>
     <script>
       tailwind.config = {
         theme: {
           fontFamily: {
-            sans: ["Inter", "sans-serif"],
+            sans: ["DM Sans", "system-ui", "sans-serif"],
           },
           extend: {
             colors: {
-              primary: "var(--primary-color)",
-              accent: "var(--secondary-color)",
+              navy: "#12395B",
+              teal: "#0E8B78",
+              gold: "#D7A74A",
+              surface: "#F4F7F9",
+              ink: "#24313F",
             },
             boxShadow: {
-              glow: "0 0 20px rgba(15, 23, 42, 0.12)",
-              soft: "0 10px 30px rgba(15, 23, 42, 0.08)",
+              card: "0 4px 24px rgba(18, 57, 91, 0.06)",
+              cardHover: "0 14px 44px rgba(18, 57, 91, 0.12)",
+              nav: "0 1px 0 rgba(18, 57, 91, 0.06)",
             },
           },
         },
       };
     </script>
     <style>
-      :root {
-        --primary-color: #2563eb;
-        --secondary-color: #eab308;
-      }
-
       html {
         scroll-behavior: smooth;
       }
-
-      @keyframes heroZoom {
-        0% {
-          transform: scale(1);
-        }
-        100% {
-          transform: scale(1.08);
-        }
-      }
-
       .fade-in {
         opacity: 0;
-        transform: translateY(18px);
-        transition: opacity 0.7s ease, transform 0.7s ease;
+        transform: translateY(16px);
+        transition: opacity 0.65s ease, transform 0.65s ease;
       }
-
       .fade-in.show {
         opacity: 1;
         transform: translateY(0);
       }
+      .hero-grid {
+        background-image: linear-gradient(rgba(18, 57, 91, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(18, 57, 91, 0.04) 1px, transparent 1px);
+        background-size: 48px 48px;
+      }
     </style>
   </head>
-  <body class="bg-white text-slate-800 antialiased">
-    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur transition-all">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#home" class="inline-flex items-center" aria-label="YOUR_BRAND_NAME home">
-          <img
-            src="public/logo.svg"
-            alt="YOUR_BRAND_NAME logo"
-            class="h-14 w-auto transition-transform duration-300 hover:scale-105 sm:h-16"
-            loading="eager"
-          />
+  <body class="bg-surface font-sans text-ink antialiased">
+    <header class="sticky top-0 z-50 border-b border-navy/10 bg-surface/95 shadow-nav backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:py-4">
+        <a href="#home" class="group flex items-center gap-3" aria-label="Kemoratt home">
+          <img src="public/logo.svg" alt="" class="h-10 w-10 shrink-0" width="40" height="40" />
+          <div class="leading-tight">
+            <span class="block text-lg font-bold tracking-tight text-navy transition group-hover:text-teal">Kemoratt</span>
+            <span class="hidden text-[10px] font-semibold uppercase tracking-[0.2em] text-teal sm:block">Supply · Procurement</span>
+          </div>
         </a>
-        <nav class="hidden items-center gap-6 md:flex">
-          <a href="#home" class="text-sm font-semibold text-slate-700 transition hover:text-primary">Home</a>
-          <a href="#courses" class="text-sm font-semibold text-slate-700 transition hover:text-primary">Courses</a>
-          <a href="#about" class="text-sm font-semibold text-slate-700 transition hover:text-primary">About</a>
-          <a href="#contact" class="text-sm font-semibold text-slate-700 transition hover:text-primary">Contact</a>
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
+          <a href="#about" class="text-sm font-semibold text-ink/80 transition hover:text-navy">About</a>
+          <a href="#services" class="text-sm font-semibold text-ink/80 transition hover:text-navy">Services</a>
+          <a href="#why" class="text-sm font-semibold text-ink/80 transition hover:text-navy">Why Us</a>
+          <a href="#industries" class="text-sm font-semibold text-ink/80 transition hover:text-navy">Industries</a>
+          <a href="#solutions" class="text-sm font-semibold text-ink/80 transition hover:text-navy">Solutions</a>
+          <a href="#contact" class="text-sm font-semibold text-ink/80 transition hover:text-navy">Contact</a>
         </nav>
-        <a
-          href="tel:+15550100199"
-          class="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:scale-[1.02] hover:bg-blue-900"
-          >Call Now</a
-        >
+        <div class="flex items-center gap-2">
+          <a
+            href="tel:+233249190789"
+            class="hidden rounded-full border border-navy/15 bg-white px-4 py-2 text-sm font-semibold text-navy shadow-sm transition hover:border-teal/40 hover:text-teal xl:inline-flex"
+            >024 919 0789</a
+          >
+          <a
+            href="#contact"
+            class="hidden rounded-full bg-teal px-4 py-2 text-sm font-semibold text-white shadow-card transition hover:bg-teal/90 sm:inline-flex"
+            >Request Support</a
+          >
+          <button
+            type="button"
+            id="menu-btn"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-navy/10 text-navy lg:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden border-t border-navy/10 bg-surface lg:hidden" role="dialog" aria-label="Mobile navigation">
+        <nav class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4 sm:px-6">
+          <a href="#about" class="mobile-link rounded-lg px-3 py-3 text-sm font-semibold text-ink hover:bg-navy/5">About</a>
+          <a href="#services" class="mobile-link rounded-lg px-3 py-3 text-sm font-semibold text-ink hover:bg-navy/5">Services</a>
+          <a href="#why" class="mobile-link rounded-lg px-3 py-3 text-sm font-semibold text-ink hover:bg-navy/5">Why Us</a>
+          <a href="#industries" class="mobile-link rounded-lg px-3 py-3 text-sm font-semibold text-ink hover:bg-navy/5">Industries</a>
+          <a href="#solutions" class="mobile-link rounded-lg px-3 py-3 text-sm font-semibold text-ink hover:bg-navy/5">Solutions</a>
+          <a href="#contact" class="mobile-link rounded-lg px-3 py-3 text-sm font-semibold text-teal hover:bg-teal/10">Contact</a>
+          <a href="tel:+233249190789" class="mt-2 rounded-full bg-teal py-3 text-center text-sm font-bold text-white">Call 024 919 0789</a>
+        </nav>
       </div>
     </header>
 
     <main id="home">
-      <section class="relative flex min-h-[85vh] items-center overflow-hidden pb-20 pt-16 sm:pb-24 sm:pt-20">
+      <!-- Hero -->
+      <section class="relative min-h-[88vh] overflow-hidden">
         <div
-          class="absolute inset-0 z-0 bg-cover bg-center"
-          style="background-image: url('public/hero.jpg'); animation: heroZoom 20s infinite alternate ease-in-out;"
+          class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('public/hero.jpg')"
+          aria-hidden="true"
         ></div>
-        <div class="absolute inset-0 z-10 bg-gradient-to-r from-slate-900/95 via-primary/80 to-primary/40"></div>
-
-        <div class="relative z-20 mx-auto w-full max-w-6xl px-4 sm:px-6">
-          <div class="max-w-2xl fade-in">
-            <p class="mb-3 inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-slate-900">
-              Admissions Now Open
-            </p>
-            <h1 class="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Master a Trade. Build Your Future.
-            </h1>
-            <p class="mt-4 text-base text-slate-100 sm:text-lg">
-              Equip yourself with high-demand technical skills. Our hands-on training programs are designed to make you job-ready and financially independent.
-            </p>
-            <p class="mt-3 text-sm font-semibold text-accent sm:text-base">
-              Call now: <a href="tel:+15550100199" class="underline decoration-accent underline-offset-2">+1 (555) 010-0199</a>
-            </p>
-            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="tel:+15550100199"
-                class="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-extrabold text-slate-900 shadow-glow transition-all hover:scale-105 hover:bg-yellow-300"
-                >Call Now</a
-              >
-              <a
-                href="https://wa.me/15550100199"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/20"
-                >Chat on WhatsApp</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="absolute bottom-0 left-0 right-0 z-20 w-full overflow-hidden leading-none text-slate-50">
-          <svg class="block h-[40px] w-full sm:h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.83,119.62,199.53,108.62Z" fill="currentColor"></path>
+        <div class="hero-grid absolute inset-0 bg-gradient-to-br from-navy/[0.94] via-navy/85 to-teal/80" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -right-20 top-1/4 hidden h-[420px] w-[420px] text-white/10 xl:block" aria-hidden="true">
+          <svg viewBox="0 0 200 200" class="h-full w-full" fill="none">
+            <circle cx="40" cy="40" r="6" fill="currentColor" />
+            <circle cx="160" cy="60" r="6" fill="currentColor" />
+            <circle cx="100" cy="140" r="6" fill="currentColor" />
+            <path d="M40 40 L160 60 L100 140 Z" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4" />
+            <path d="M20 120 L180 30" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4" />
+            <rect x="120" y="120" width="48" height="32" rx="4" stroke="currentColor" stroke-width="1" />
           </svg>
         </div>
-      </section>
-
-      <section class="relative z-30 bg-slate-50 px-4 sm:px-6">
-        <div class="mx-auto -mt-10 grid max-w-6xl grid-cols-2 gap-4 rounded-2xl bg-white p-6 shadow-xl sm:-mt-16 sm:grid-cols-4 lg:p-8">
-          <div class="fade-in flex flex-col items-center text-center">
-            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-            <p class="text-xs font-bold text-slate-800 sm:text-sm">Industry Standard</p>
-          </div>
-          <div class="fade-in flex flex-col items-center text-center">
-            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            </div>
-            <p class="text-xs font-bold text-slate-800 sm:text-sm">YOUR_STAT_HIGHLIGHT</p>
-          </div>
-          <div class="fade-in flex flex-col items-center text-center">
-            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            </div>
-            <p class="text-xs font-bold text-slate-800 sm:text-sm">Hands-On Focused</p>
-          </div>
-          <div class="fade-in flex flex-col items-center text-center">
-            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-blue-50 text-primary">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            </div>
-            <p class="text-xs font-bold text-slate-800 sm:text-sm">YOUR_REGION_ONE &amp; YOUR_REGION_TWO</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="courses" class="bg-slate-50 px-4 py-16 sm:px-6 lg:py-24">
-        <div class="mx-auto max-w-6xl">
-        <div class="mb-8 text-center fade-in">
-          <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Our Training Programs</h2>
-          <p class="mx-auto mt-3 max-w-2xl text-base text-slate-600 sm:text-lg">Intensive, practical-first courses tailored for your local job market.</p>
-        </div>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-01.jpg" alt="CCTV Installation training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">CCTV Installation</h3>
-              <p class="mt-2 text-sm text-slate-600">Learn to design, install, and troubleshoot modern security camera networks.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-02.jpg" alt="Solar Energy training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Solar Energy</h3>
-              <p class="mt-2 text-sm text-slate-600">Master solar panel installation, battery sizing, and inverter setup.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-03.jpg" alt="Plumbing training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Plumbing</h3>
-              <p class="mt-2 text-sm text-slate-600">Get trained in professional pipe fitting, water heater installation, and repairs.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-04.jpg" alt="Electricals training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Electricals</h3>
-              <p class="mt-2 text-sm text-slate-600">Comprehensive training in domestic and industrial wiring and maintenance.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-05.jpg" alt="Electric Fence training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Electric Fence</h3>
-              <p class="mt-2 text-sm text-slate-600">Specialized training in designing and installing high-voltage perimeter security systems.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-06.jpg" alt="Car Tracking training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Car Tracking</h3>
-              <p class="mt-2 text-sm text-slate-600">Learn GPS tracker installation and fleet management configuration.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-07.jpg" alt="Air Conditioning training" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Air Conditioning</h3>
-              <p class="mt-2 text-sm text-slate-600">Hands-on skills in AC installation, gas refilling, and general servicing.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-
-          <article class="group fade-in overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <div class="overflow-hidden">
-              <img src="public/media-08.jpg" alt="Forklift Training class" loading="lazy" class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-bold text-primary">Forklift Training</h3>
-              <p class="mt-2 text-sm text-slate-600">Professional forklift operation, maintenance, and warehouse safety.</p>
-              <a href="tel:+15550100199" class="mt-5 inline-block rounded-full bg-slate-100 px-5 py-2.5 text-xs font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-white">Enquire Now</a>
-            </div>
-          </article>
-        </div>
-        </div>
-      </section>
-
-      <section class="bg-white py-16 sm:py-24">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6">
-          <div class="fade-in mb-8 text-center">
-            <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Your Path to Certification</h2>
-          </div>
-          <div class="grid gap-8 sm:grid-cols-3">
-            <article class="fade-in group relative rounded-3xl border border-slate-100 bg-slate-50 p-8 text-center transition-all hover:shadow-lg">
-              <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-black text-slate-900 shadow-glow transition-transform group-hover:scale-110">1</div>
-              <h3 class="text-xl font-bold text-primary">Get in Touch</h3>
-              <p class="mt-3 text-slate-600">Call or WhatsApp our admissions team to discuss the best course for you.</p>
-            </article>
-            <article class="fade-in group relative rounded-3xl border border-slate-100 bg-slate-50 p-8 text-center transition-all hover:shadow-lg">
-              <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-black text-slate-900 shadow-glow transition-transform group-hover:scale-110">2</div>
-              <h3 class="text-xl font-bold text-primary">Practical Training</h3>
-              <p class="mt-3 text-slate-600">Spend time in our fully equipped workshops learning directly from industry veterans.</p>
-            </article>
-            <article class="fade-in group relative rounded-3xl border border-slate-100 bg-slate-50 p-8 text-center transition-all hover:shadow-lg">
-              <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-xl font-black text-slate-900 shadow-glow transition-transform group-hover:scale-110">3</div>
-              <h3 class="text-xl font-bold text-primary">Graduate &amp; Work</h3>
-              <p class="mt-3 text-slate-600">Step into the job market with a recognized certificate and the confidence to deliver.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <div class="fade-in mb-8 text-center">
-          <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Why Choose Us</h2>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-            <p class="font-bold text-slate-800">80% Practical, 20% Theory</p>
-          </div>
-          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-            <p class="font-bold text-slate-800">Taught by Industry Veterans</p>
-          </div>
-          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-            <p class="font-bold text-slate-800">Flexible Payment Plans</p>
-          </div>
-          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-            <p class="font-bold text-slate-800">Intensive Short Courses</p>
-          </div>
-          <div class="fade-in flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary"><svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-            <p class="font-bold text-slate-800">Post-Training Mentorship</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-slate-50">
-        <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div class="fade-in mb-8 text-center">
-            <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Inside Our Workshops</h2>
-            <p class="mt-2 text-sm text-slate-600">Take a look at our students getting hands-on experience across our campuses.</p>
-          </div>
-          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-01.jpg" alt="CCTV installation practical session" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-02.jpg" alt="Solar panel installation training" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-03.jpg" alt="Plumbing training practical" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-04.jpg" alt="Electrical wiring practical" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-08.jpg" alt="Forklift operation training" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-07.jpg" alt="Air conditioning maintenance training" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-05.jpg" alt="Electric fence installation training" loading="lazy" /></div>
-            <div class="overflow-hidden rounded-xl"><img class="fade-in h-32 w-full object-cover transition-transform duration-500 hover:scale-110 sm:h-48" src="public/media-06.jpg" alt="Car tracking installation training" loading="lazy" /></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <div class="fade-in mb-8 text-center">
-          <h2 class="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">Our Locations</h2>
-        </div>
-        <div class="grid gap-5 sm:grid-cols-2">
-          <article class="fade-in rounded-2xl border border-slate-200 bg-white p-5">
-            <h3 class="text-lg font-bold text-primary">YOUR_CITY_ONE</h3>
-            <p class="mt-2 text-sm text-slate-600">YOUR_ADDRESS_LINE_ONE</p>
-          </article>
-          <article class="fade-in rounded-2xl border border-slate-200 bg-white p-5">
-            <h3 class="text-lg font-bold text-primary">YOUR_CITY_TWO</h3>
-            <p class="mt-2 text-sm text-slate-600">YOUR_ADDRESS_LINE_TWO</p>
-          </article>
-        </div>
-        <div class="fade-in mt-6 flex flex-col items-center justify-between rounded-2xl bg-blue-50 p-8 text-center sm:flex-row sm:text-left">
-          <div>
-            <h4 class="text-lg font-bold text-primary">Visit Our Campuses</h4>
-            <p class="mt-1 text-sm text-slate-600">Our workshops are open from Monday to Saturday, 8:00 AM - 5:00 PM. Walk in for a free campus tour.</p>
-          </div>
-          <a href="tel:+15550100199" class="mt-5 inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition hover:bg-blue-900 sm:mt-0">Get Directions</a>
-        </div>
-      </section>
-
-      <section class="bg-primary">
-        <div class="mx-auto max-w-6xl px-4 py-14 text-center text-white sm:px-6">
-          <h2 class="fade-in text-3xl font-extrabold tracking-tight sm:text-4xl">Take the First Step Towards Your New Career</h2>
-          <p class="fade-in mt-3 text-sm text-blue-100 sm:text-base">Contact our admissions office today to find out about upcoming intake dates.</p>
-          <div class="fade-in mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-            <a href="tel:+15550100199" class="rounded-full bg-accent px-8 py-4 text-sm font-extrabold text-slate-900 shadow-glow transition-all hover:scale-105 hover:bg-yellow-300">
-              Call Now
-            </a>
+        <div class="relative z-10 mx-auto flex max-w-6xl min-h-[88vh] flex-col justify-center px-4 py-20 sm:px-6 lg:py-24">
+          <p class="fade-in mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold backdrop-blur-sm">
+            Accra North · Ashaiman · Ghana-wide support
+          </p>
+          <h1 class="fade-in max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
+            Reliable Supply &amp; Procurement Solutions for Modern Businesses
+          </h1>
+          <p class="fade-in mt-6 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
+            Helping businesses streamline procurement, sourcing, logistics, and operational support with reliable supply solutions and professional service delivery.
+          </p>
+          <div class="fade-in mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
-              href="https://wa.me/15550100199"
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-sm font-bold text-navy shadow-card transition hover:-translate-y-0.5 hover:bg-gold/90"
+              >Request Supply Support</a
+            >
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full border border-white/35 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+              >Contact Us</a
+            >
+            <a
+              href="https://wa.me/233249190789"
               target="_blank"
               rel="noopener noreferrer"
-              class="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/20"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
             >
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               WhatsApp
             </a>
           </div>
         </div>
       </section>
+
+      <!-- About -->
+      <section id="about" class="border-b border-navy/8 bg-white py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-12 lg:grid-cols-12 lg:items-center">
+            <div class="fade-in lg:col-span-5">
+              <p class="text-sm font-bold uppercase tracking-widest text-teal">About Kemoratt</p>
+              <h2 class="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">Structured supply for organizations that move fast</h2>
+            </div>
+            <div class="fade-in space-y-4 text-base leading-relaxed text-ink/85 lg:col-span-7">
+              <p>
+                Kemoratt is a Ghana-based <strong class="font-semibold text-navy">business supply, procurement, and operational support</strong> company. We help enterprises and growing teams source the right products, manage recurring supply needs, and keep day-to-day operations running without friction.
+              </p>
+              <p>
+                From <strong class="font-semibold text-navy">Accra North</strong> and our <strong class="font-semibold text-navy">Ashaiman</strong> operations, we support organizations with dependable logistics, responsive service, and pricing that respects your procurement budgets. Our approach blends <strong class="font-semibold text-navy">technology-driven coordination</strong> with professional relationships—so you get clarity, speed, and consistency.
+              </p>
+              <p>
+                Whether you need recurring office supplies, specialized equipment, or project-based sourcing, Kemoratt is built to deliver <strong class="font-semibold text-navy">operational efficiency</strong>, transparent communication, and solutions that scale with your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="fade-in mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-teal">What we deliver</p>
+            <h2 class="mt-3 text-3xl font-bold text-navy sm:text-4xl">Core services</h2>
+            <p class="mt-4 text-ink/75">End-to-end procurement and supply support—structured, accountable, and aligned to how your teams actually work.</p>
+          </div>
+          <div class="mt-14 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            <!-- service cards: icon in rounded teal/navy box -->
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Supply Chain Solutions</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Reliable supply chain and sourcing support helping businesses improve operational efficiency and procurement flow.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Procurement Support</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Professional procurement assistance for organizations seeking efficient sourcing and supply management solutions.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Office Supplies</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Supply of essential office products and operational materials for businesses and institutions.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Commercial Furniture</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Modern office and commercial furniture solutions designed for productivity and functionality.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Technology &amp; Office Machines</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Technology products and office equipment supporting modern business operations and workplace efficiency.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Construction Supplies</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Reliable sourcing and delivery of construction-related products and operational materials.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Safety Equipment</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Professional-grade safety equipment and protective solutions for industrial and commercial use.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Signage &amp; Branding Materials</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Custom signage, branding materials, and visual communication products for businesses and organizations.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Promotional Products</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Branded merchandise and promotional materials supporting business visibility and marketing campaigns.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Uniforms &amp; Apparel</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Professional uniforms and branded apparel solutions for organizations and teams.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">Business Operational Support</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Operational support services helping businesses improve convenience, structure, and efficiency.</p>
+            </article>
+            <article class="service-card fade-in group rounded-2xl border border-navy/8 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-cardHover sm:col-span-2 xl:col-span-1">
+              <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold transition group-hover:bg-teal group-hover:text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-navy">General Enterprise Supply Services</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink/75">Broad enterprise supply coverage for teams that need a single, dependable partner across categories and locations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose us -->
+      <section id="why" class="border-y border-navy/8 bg-white py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="fade-in mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-teal">Why Kemoratt</p>
+            <h2 class="mt-3 text-3xl font-bold text-navy sm:text-4xl">Built for procurement credibility</h2>
+            <p class="mt-4 text-ink/75">Operational intelligence, clear communication, and delivery you can plan around.</p>
+          </div>
+          <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="fade-in flex gap-4 rounded-2xl border border-navy/8 bg-surface p-6 shadow-sm transition hover:border-teal/30 hover:shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy">Reliable Procurement Support</h3>
+                <p class="mt-2 text-sm text-ink/75">Structured sourcing workflows and accountable follow-through on every request.</p>
+              </div>
+            </div>
+            <div class="fade-in flex gap-4 rounded-2xl border border-navy/8 bg-surface p-6 shadow-sm transition hover:border-teal/30 hover:shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy">Competitive Pricing</h3>
+                <p class="mt-2 text-sm text-ink/75">Transparent quotations aligned to volume, frequency, and your approval process.</p>
+              </div>
+            </div>
+            <div class="fade-in flex gap-4 rounded-2xl border border-navy/8 bg-surface p-6 shadow-sm transition hover:border-teal/30 hover:shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy">Fast Response Times</h3>
+                <p class="mt-2 text-sm text-ink/75">Rapid triage for urgent operational needs and predictable updates on ongoing orders.</p>
+              </div>
+            </div>
+            <div class="fade-in flex gap-4 rounded-2xl border border-navy/8 bg-surface p-6 shadow-sm transition hover:border-teal/30 hover:shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy">Technology-Driven Solutions</h3>
+                <p class="mt-2 text-sm text-ink/75">Digital coordination for catalogs, approvals, and recurring supply schedules.</p>
+              </div>
+            </div>
+            <div class="fade-in flex gap-4 rounded-2xl border border-navy/8 bg-surface p-6 shadow-sm transition hover:border-teal/30 hover:shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M14 10h4.764M14 10a2 2 0 11-4 0m4 0a2 2 0 104 0m-5 10a2 2 0 11-4 0m4 0a2 2 0 104 0m-5-10v10a2 2 0 002 2h6a2 2 0 002-2V10"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy">Professional Customer Service</h3>
+                <p class="mt-2 text-sm text-ink/75">Dedicated support tone: precise, respectful, and focused on your operating context.</p>
+              </div>
+            </div>
+            <div class="fade-in flex gap-4 rounded-2xl border border-navy/8 bg-surface p-6 shadow-sm transition hover:border-teal/30 hover:shadow-card">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-navy">Flexible Supply Solutions</h3>
+                <p class="mt-2 text-sm text-ink/75">One-off projects, retainers, and multi-site programs—structured to how you procure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industries -->
+      <section id="industries" class="py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="fade-in mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-teal">Who we support</p>
+            <h2 class="mt-3 text-3xl font-bold text-navy sm:text-4xl">Industries we support</h2>
+          </div>
+          <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="fade-in rounded-2xl border border-navy/8 bg-white p-8 text-center shadow-card transition hover:-translate-y-0.5 hover:shadow-cardHover">
+              <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              </div>
+              <h3 class="mt-5 font-bold text-navy">Corporate Businesses</h3>
+              <p class="mt-2 text-sm text-ink/70">HQ and branch procurement with consistent catalog discipline.</p>
+            </article>
+            <article class="fade-in rounded-2xl border border-navy/8 bg-white p-8 text-center shadow-card transition hover:-translate-y-0.5 hover:shadow-cardHover">
+              <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              </div>
+              <h3 class="mt-5 font-bold text-navy">Construction Companies</h3>
+              <p class="mt-2 text-sm text-ink/70">Site-ready materials and safety-aligned deliveries when schedules tighten.</p>
+            </article>
+            <article class="fade-in rounded-2xl border border-navy/8 bg-white p-8 text-center shadow-card transition hover:-translate-y-0.5 hover:shadow-cardHover">
+              <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <h3 class="mt-5 font-bold text-navy">SMEs</h3>
+              <p class="mt-2 text-sm text-ink/70">Lean procurement support without enterprise overhead.</p>
+            </article>
+            <article class="fade-in rounded-2xl border border-navy/8 bg-white p-8 text-center shadow-card transition hover:-translate-y-0.5 hover:shadow-cardHover">
+              <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              </div>
+              <h3 class="mt-5 font-bold text-navy">Retail Businesses</h3>
+              <p class="mt-2 text-sm text-ink/70">Replenishment, merchandising inputs, and operational consumables.</p>
+            </article>
+            <article class="fade-in rounded-2xl border border-navy/8 bg-white p-8 text-center shadow-card transition hover:-translate-y-0.5 hover:shadow-cardHover">
+              <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              </div>
+              <h3 class="mt-5 font-bold text-navy">Educational Institutions</h3>
+              <p class="mt-2 text-sm text-ink/70">Classroom, lab, and facilities supply with dependable turnaround.</p>
+            </article>
+            <article class="fade-in rounded-2xl border border-navy/8 bg-white p-8 text-center shadow-card transition hover:-translate-y-0.5 hover:shadow-cardHover">
+              <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+              </div>
+              <h3 class="mt-5 font-bold text-navy">Commercial Organizations</h3>
+              <p class="mt-2 text-sm text-ink/70">Multi-department sourcing with documentation-friendly workflows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured solutions -->
+      <section id="solutions" class="border-t border-navy/8 bg-navy py-16 text-white sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="fade-in flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-widest text-gold">Featured products &amp; solutions</p>
+              <h2 class="mt-3 text-3xl font-bold sm:text-4xl">Operational categories we move</h2>
+            </div>
+            <p class="max-w-md text-sm text-white/75">Curated supply lanes for equipment, protection, workspace, infrastructure, and brand execution.</p>
+          </div>
+          <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="fade-in group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-gold/40 hover:bg-white/10">
+              <div class="text-gold">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">Office Equipment</h3>
+              <p class="mt-2 text-sm text-white/70">Devices, peripherals, and productivity hardware aligned to workplace standards.</p>
+            </article>
+            <article class="fade-in group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-gold/40 hover:bg-white/10">
+              <div class="text-gold">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">Safety Gear</h3>
+              <p class="mt-2 text-sm text-white/70">PPE and compliance-oriented safety lines for commercial and industrial teams.</p>
+            </article>
+            <article class="fade-in group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-gold/40 hover:bg-white/10">
+              <div class="text-gold">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">Branded Merchandise</h3>
+              <p class="mt-2 text-sm text-white/70">Quality branded items for campaigns, onboarding, and field teams.</p>
+            </article>
+            <article class="fade-in group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-gold/40 hover:bg-white/10">
+              <div class="text-gold">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">Commercial Furniture</h3>
+              <p class="mt-2 text-sm text-white/70">Workstations, storage, and meeting environments built for durability.</p>
+            </article>
+            <article class="fade-in group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-gold/40 hover:bg-white/10">
+              <div class="text-gold">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">Construction Materials</h3>
+              <p class="mt-2 text-sm text-white/70">Sourced materials with scheduling that respects your site milestones.</p>
+            </article>
+            <article class="fade-in group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-gold/40 hover:bg-white/10">
+              <div class="text-gold">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <h3 class="mt-4 text-lg font-bold">Technology Products</h3>
+              <p class="mt-2 text-sm text-white/70">Hardware and accessories that keep teams connected and secure.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="bg-surface py-16 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="fade-in mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-teal">Contact</p>
+            <h2 class="mt-3 text-3xl font-bold text-navy sm:text-4xl">Request a quote</h2>
+            <p class="mt-4 text-ink/75">Share your requirements—we will respond with next steps and a structured quotation.</p>
+          </div>
+          <div class="mt-14 grid gap-10 lg:grid-cols-12">
+            <div class="fade-in space-y-8 lg:col-span-5">
+              <div class="rounded-2xl border border-navy/8 bg-white p-6 shadow-card">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-navy/70">Direct lines</h3>
+                <a href="tel:+233249190789" class="mt-3 block text-lg font-bold text-navy hover:text-teal">024 919 0789</a>
+                <a href="tel:+233244786806" class="mt-1 block text-lg font-bold text-navy hover:text-teal">024 478 6806</a>
+                <a
+                  href="https://wa.me/233249190789"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal py-3.5 text-sm font-bold text-white transition hover:bg-teal/90"
+                >
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp
+                </a>
+              </div>
+              <div class="rounded-2xl border border-navy/8 bg-white p-6 shadow-card">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-navy/70">Locations</h3>
+                <p class="mt-3 text-sm font-semibold text-navy">Accra North, Greater Accra, Ghana</p>
+                <p class="mt-4 text-sm font-semibold text-navy">Ashaiman operations</p>
+                <p class="mt-1 text-sm text-ink/75">Filo Street, Lebanon, Ashaiman</p>
+                <a href="https://kemorattgh.com" class="mt-4 inline-flex text-sm font-semibold text-teal hover:underline">kemorattgh.com</a>
+              </div>
+              <div class="overflow-hidden rounded-2xl border border-navy/8 bg-navy/5 shadow-inner">
+                <div class="aspect-[16/10] flex flex-col items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-sm font-semibold text-navy">Map preview</p>
+                  <p class="text-xs text-ink/65">Embed your Google Map or map provider iframe here.</p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Accra+North+Greater+Accra+Ghana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-2 inline-flex rounded-full border border-navy/20 bg-white px-4 py-2 text-xs font-bold text-navy transition hover:border-teal hover:text-teal"
+                    >Open Accra North in Maps</a
+                  >
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Filo+Street+Lebanon+Ashaiman+Ghana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex rounded-full border border-navy/15 px-4 py-2 text-xs font-semibold text-ink/80 transition hover:border-teal hover:text-teal"
+                    >Open Ashaiman location</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="fade-in lg:col-span-7">
+              <form id="quote-form" class="rounded-2xl border border-navy/8 bg-white p-6 shadow-card sm:p-8" novalidate>
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="sm:col-span-2">
+                    <label for="qf-name" class="text-xs font-bold uppercase tracking-wider text-navy/70">Full name</label>
+                    <input id="qf-name" name="name" type="text" required autocomplete="name" class="mt-1.5 w-full rounded-lg border border-navy/15 bg-surface px-4 py-3 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20" />
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="qf-company" class="text-xs font-bold uppercase tracking-wider text-navy/70">Company name</label>
+                    <input id="qf-company" name="company" type="text" required autocomplete="organization" class="mt-1.5 w-full rounded-lg border border-navy/15 bg-surface px-4 py-3 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20" />
+                  </div>
+                  <div>
+                    <label for="qf-phone" class="text-xs font-bold uppercase tracking-wider text-navy/70">Phone number</label>
+                    <input id="qf-phone" name="phone" type="tel" required autocomplete="tel" class="mt-1.5 w-full rounded-lg border border-navy/15 bg-surface px-4 py-3 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20" />
+                  </div>
+                  <div>
+                    <label for="qf-email" class="text-xs font-bold uppercase tracking-wider text-navy/70">Email</label>
+                    <input id="qf-email" name="email" type="email" required autocomplete="email" class="mt-1.5 w-full rounded-lg border border-navy/15 bg-surface px-4 py-3 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20" />
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="qf-service" class="text-xs font-bold uppercase tracking-wider text-navy/70">Service needed</label>
+                    <select id="qf-service" name="service" required class="mt-1.5 w-full rounded-lg border border-navy/15 bg-surface px-4 py-3 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20">
+                      <option value="" disabled selected hidden>Select a service</option>
+                      <option>Supply Chain Solutions</option>
+                      <option>Procurement Support</option>
+                      <option>Office Supplies</option>
+                      <option>Commercial Furniture</option>
+                      <option>Technology &amp; Office Machines</option>
+                      <option>Construction Supplies</option>
+                      <option>Safety Equipment</option>
+                      <option>Signage &amp; Branding Materials</option>
+                      <option>Promotional Products</option>
+                      <option>Uniforms &amp; Apparel</option>
+                      <option>Business Operational Support</option>
+                      <option>General Enterprise Supply</option>
+                      <option>Other / Multiple</option>
+                    </select>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="qf-message" class="text-xs font-bold uppercase tracking-wider text-navy/70">Message</label>
+                    <textarea id="qf-message" name="message" rows="4" required class="mt-1.5 w-full resize-y rounded-lg border border-navy/15 bg-surface px-4 py-3 text-sm outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="mt-6 w-full rounded-full bg-navy py-4 text-sm font-bold text-white shadow-card transition hover:bg-navy/90">Request a Quote</button>
+                <p class="mt-3 text-center text-xs text-ink/55">Submitting opens your email client to send details to info@kemorattgh.com</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="border-t border-slate-200 bg-white pb-24 pt-10 md:pb-10">
-      <div class="mx-auto grid max-w-6xl gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+    <footer class="border-t border-navy/10 bg-white pb-28 pt-12 lg:pb-12">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Phone</h3>
-          <a href="tel:+15550100199" class="mt-3 block text-sm text-slate-700 hover:text-primary">+1 (555) 010-0199</a>
+          <div class="flex items-center gap-2">
+            <img src="public/logo.svg" alt="" class="h-9 w-9" width="36" height="36" />
+            <span class="text-lg font-bold text-navy">Kemoratt</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-ink/70">Supply, procurement, and operational support for modern organizations across Ghana.</p>
         </div>
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Email</h3>
-          <a href="mailto:your@email.com" class="mt-3 block text-sm text-slate-700 hover:text-primary">your@email.com</a>
+          <h3 class="text-xs font-bold uppercase tracking-widest text-navy/60">Contact</h3>
+          <a href="tel:+233249190789" class="mt-4 block text-sm font-semibold text-ink hover:text-teal">024 919 0789</a>
+          <a href="tel:+233244786806" class="mt-1 block text-sm font-semibold text-ink hover:text-teal">024 478 6806</a>
+          <a href="mailto:info@kemorattgh.com" class="mt-3 block text-sm text-teal hover:underline">info@kemorattgh.com</a>
+          <a href="https://kemorattgh.com" class="mt-1 block text-sm text-ink/70 hover:text-teal">kemorattgh.com</a>
         </div>
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Locations</h3>
-          <p class="mt-3 text-sm text-slate-700">YOUR_CITY_ONE: YOUR_ADDRESS_LINE_ONE</p>
-          <p class="mt-1 text-sm text-slate-700">YOUR_CITY_TWO: YOUR_ADDRESS_LINE_TWO</p>
+          <h3 class="text-xs font-bold uppercase tracking-widest text-navy/60">Quick links</h3>
+          <nav class="mt-4 flex flex-col gap-2 text-sm font-medium text-ink/80">
+            <a href="#about" class="hover:text-teal">About</a>
+            <a href="#services" class="hover:text-teal">Services</a>
+            <a href="#why" class="hover:text-teal">Why Us</a>
+            <a href="#contact" class="hover:text-teal">Request a quote</a>
+          </nav>
         </div>
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide text-primary">Quick Links</h3>
-          <a href="#home" class="mt-3 block text-sm text-slate-700 hover:text-primary">Home</a>
-          <a href="#courses" class="mt-1 block text-sm text-slate-700 hover:text-primary">Courses</a>
-          <a href="#about" class="mt-1 block text-sm text-slate-700 hover:text-primary">About</a>
-          <a href="#contact" class="mt-1 block text-sm text-slate-700 hover:text-primary">Contact</a>
+          <h3 class="text-xs font-bold uppercase tracking-widest text-navy/60">Social</h3>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="#" class="rounded-full border border-navy/10 px-3 py-1.5 text-xs font-semibold text-ink/70 transition hover:border-teal hover:text-teal" aria-label="LinkedIn (placeholder)">LinkedIn</a>
+            <a href="#" class="rounded-full border border-navy/10 px-3 py-1.5 text-xs font-semibold text-ink/70 transition hover:border-teal hover:text-teal" aria-label="Facebook (placeholder)">Facebook</a>
+            <a href="#" class="rounded-full border border-navy/10 px-3 py-1.5 text-xs font-semibold text-ink/70 transition hover:border-teal hover:text-teal" aria-label="X (placeholder)">X</a>
+          </div>
         </div>
       </div>
-      <p class="mt-8 text-center text-xs text-slate-500">© <span id="year"></span> YOUR_BRAND_NAME. All rights reserved.</p>
+      <p class="mx-auto mt-12 max-w-6xl border-t border-navy/8 px-4 pt-8 text-center text-xs text-ink/55 sm:px-6">
+        © <span id="year"></span> Kemoratt. All rights reserved. Accra North &amp; Ashaiman, Ghana.
+      </p>
     </footer>
 
-    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-300 bg-white p-3 shadow-[0_-8px_24px_rgba(15,23,42,0.1)] md:hidden">
-      <div class="mx-auto flex max-w-md gap-3">
-        <a href="tel:+15550100199" class="flex-1 rounded-full bg-primary px-4 py-3 text-center text-sm font-bold text-white">Call Now</a>
-        <a
-          href="https://wa.me/15550100199"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex-1 rounded-full bg-accent px-4 py-3 text-center text-sm font-bold text-slate-900"
-          >WhatsApp</a
-        >
+    <div class="fixed inset-x-0 bottom-0 z-40 border-t border-navy/10 bg-white/95 p-3 shadow-[0_-8px_30px_rgba(18,57,91,0.08)] backdrop-blur-md lg:hidden">
+      <div class="mx-auto flex max-w-lg gap-2">
+        <a href="tel:+233249190789" class="flex-1 rounded-full bg-navy py-3 text-center text-sm font-bold text-white">Call</a>
+        <a href="https://wa.me/233249190789" target="_blank" rel="noopener noreferrer" class="flex-1 rounded-full bg-teal py-3 text-center text-sm font-bold text-white">WhatsApp</a>
+        <a href="#contact" class="flex-1 rounded-full border border-navy/15 py-3 text-center text-sm font-bold text-navy">Quote</a>
       </div>
     </div>
 
@@ -452,10 +668,53 @@
             }
           });
         },
-        { threshold: 0.15 }
+        { threshold: 0.12, rootMargin: "0px 0px -5% 0px" }
       );
-
       document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        const open = mobileMenu.classList.toggle("hidden") === false;
+        menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      });
+      document.querySelectorAll(".mobile-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuBtn.setAttribute("aria-expanded", "false");
+          menuBtn.setAttribute("aria-label", "Open menu");
+        });
+      });
+
+      document.getElementById("quote-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        const name = (data.get("name") || "").toString().trim();
+        const company = (data.get("company") || "").toString().trim();
+        const phone = (data.get("phone") || "").toString().trim();
+        const email = (data.get("email") || "").toString().trim();
+        const service = (data.get("service") || "").toString().trim();
+        const message = (data.get("message") || "").toString().trim();
+        if (!name || !company || !phone || !email || !service || !message) return;
+        const subject = encodeURIComponent("Quote request — " + company);
+        const body = encodeURIComponent(
+          "Full name: " +
+            name +
+            "\nCompany: " +
+            company +
+            "\nPhone: " +
+            phone +
+            "\nEmail: " +
+            email +
+            "\nService needed: " +
+            service +
+            "\n\nMessage:\n" +
+            message
+        );
+        window.location.href = "mailto:info@kemorattgh.com?subject=" + subject + "&body=" + body;
+      });
     </script>
   </body>
 </html>

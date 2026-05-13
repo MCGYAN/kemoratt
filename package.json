@@ -1,13 +1,13 @@
 {
-  "name": "your-project-name",
+  "name": "kemoratt-website",
   "version": "1.0.0",
   "private": true,
-  "description": "YOUR_PROJECT_DESCRIPTION",
-  "author": "your@email.com",
-  "homepage": "https://yourdomain.com",
+  "description": "Kemoratt — business supply, procurement, and operational support (Ghana).",
+  "author": "Kemoratt <info@kemorattgh.com>",
+  "homepage": "https://kemorattgh.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/YOUR_PROJECT_NAME.git"
+    "url": "https://github.com/YOUR_USERNAME/kemoratt-website.git"
   },
   "license": "MIT"
 }

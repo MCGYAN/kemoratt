@@ -1,46 +1,31 @@
-# Customization Checklist
-
-Use this list when turning the template into your own site.
+# Kemoratt site — customization
 
 ## Branding
 
-- [ ] Replace `YOUR_PROJECT_NAME` and `YOUR_BRAND_NAME` in `index.html`, `public/manifest.json`, and `README.md`
-- [ ] Swap `public/logo.svg` for your logo (keep the filename or update references)
-- [ ] Swap `public/hero.jpg` for your hero background
-- [ ] Swap `public/og-image.png` for social sharing (recommended 1200×630)
-- [ ] Replace `public/favicon.png` and `public/icon-192.png`
-- [ ] Replace `public/media-01.jpg` … `public/media-08.jpg` with real course or gallery images (update `alt` text to match)
+- [ ] Replace placeholder hero (`public/hero.jpg`) with on-brand photography or illustration.
+- [ ] Refresh `public/og-image.png` for social previews (1200×630 recommended).
+- [ ] Update `public/logo.svg` if you adopt a final logo lockup.
+- [ ] Swap `public/favicon.png` and `public/icon-192.png` after final brand marks are ready.
 
-## Contact & locations
+## Contact & form
 
-- [ ] Update phone numbers (`tel:` and `https://wa.me/…`) and visible phone copy
-- [ ] Update `mailto:your@email.com` and footer email
-- [ ] Replace `YOUR_CITY_*` and `YOUR_ADDRESS_LINE_*` placeholders
-- [ ] Replace `YOUR_REGION_ONE`, `YOUR_REGION_TWO`, and `YOUR_STAT_HIGHLIGHT` in the stats strip
+- [ ] Confirm `info@kemorattgh.com` is live and monitored (or change all references in `index.html` and JSON-LD).
+- [ ] Replace mailto-based quote flow with a hosted form or API if you need CRM routing or spam protection.
+- [ ] Add a real embedded map (Google Maps / Mapbox iframe) in the contact section where the map preview sits.
 
-## SEO
+## SEO & domain
 
-- [ ] Set `YOUR_PROJECT_DESCRIPTION` everywhere it appears (meta, Open Graph, Twitter, JSON-LD)
-- [ ] Replace `https://yourdomain.com` with your real domain (canonical, OG/Twitter URLs, JSON-LD, `public/robots.txt`, `public/sitemap.xml`)
-- [ ] Adjust `public/sitemap.xml` if you add more pages
-- [ ] Review `public/robots.txt` `Sitemap:` URL after deployment
+- [ ] Confirm `https://kemorattgh.com` is the canonical URL everywhere (meta, OG, Twitter, `public/sitemap.xml`, `public/robots.txt`).
+- [ ] Submit `public/sitemap.xml` in Search Console after go-live.
 
-## Deployment
+## Social
 
-- [ ] Point DNS to your host and configure HTTPS
-- [ ] Confirm asset paths (`public/…`) match how your host serves static files (some platforms use `public/` as the web root; you may need to move files or change paths)
+- [ ] Replace footer social `href="#"` placeholders with real profile URLs (or remove unused networks).
 
 ## Analytics
 
-- [ ] Add your analytics snippet where the `ANALYTICS PLACEHOLDER` comments are in `index.html`
+- [ ] Add your analytics snippet next to the `ANALYTICS PLACEHOLDER` comment in `index.html`.
 
 ## Legal
 
-- [ ] Add a privacy policy page and link it from the footer if you collect data or use analytics
-- [ ] Add terms of use if needed
-- [ ] Update `LICENSE` with your legal name or entity
-
-## Project metadata
-
-- [ ] Edit `package.json` (`name`, `description`, `author`, `homepage`, `repository`)
-- [ ] Point `git remote` at your own repository when you are ready
+- [ ] Add Privacy Policy / Terms pages and link them from the footer when you collect form data or use analytics.
