@@ -4,7 +4,7 @@
 
 - [ ] Replace placeholder hero (`public/hero.jpg`) with on-brand photography or illustration.
 - [ ] Refresh `public/og-image.png` for social previews (1200×630 recommended).
-- [ ] Update `public/logo.svg` if you adopt a final logo lockup.
+- [ ] Replace `public/kemoratt-logo.png` when you have an updated master file (e.g. transparent background for light headers).
 - [ ] Swap `public/favicon.png` and `public/icon-192.png` after final brand marks are ready.
 
 ## Contact & form
