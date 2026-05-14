@@ -16,4 +16,4 @@ The quote form opens the visitor’s email client with a pre-filled message to `
 
 ## Assets
 
-Branded raster assets live in `public/` (`hero.jpg`, `og-image.png`, favicons). Replace with photography or design exports as your brand evolves.
+Branded raster assets live in `public/` (`hero.png`, `og-image.png`, favicons). Replace with photography or design exports as your brand evolves.
