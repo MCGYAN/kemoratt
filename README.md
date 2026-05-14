@@ -1,6 +1,6 @@
 # Kemoratt
 
-Static website for **Kemoratt** — supply chain, procurement, and operational support for businesses in Ghana.
+Static website for **Kemoratt**: supply chain, procurement, and operational support for businesses in Ghana.
 
 ## Preview
 

@@ -1,4 +1,4 @@
-# Kemoratt site — customization
+# Kemoratt site: customization
 
 ## Branding
 
